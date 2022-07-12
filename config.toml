@@ -15,8 +15,7 @@ language = "en"
 theme = "vncnt-hugo"
 title = "graynk"
 
-[blackfriday]
-  extensions = ["hardLineBreak"]
+_merge = "none"
 
 [permalinks]
   fixed = ":title/"
@@ -32,8 +31,23 @@ title = "graynk"
   error404 = "There's nothing here."
 
   [params.contact]
-    github = "https://github.com/graynk"
-    telegram = "https://t.me/semifunctional"
-    steam = "https://steamcommunity.com/id/graynk"
-    hacker-news-square = "/hn"
-    email = "gray@graynk.space"
+    [params.contact.0]
+      name = "GitHub"
+      icon = "github"
+      style = "fab"
+      link = "https://github.com/graynk"
+    [params.contact.1]
+      name = "Telegram"
+      icon = "telegram"
+      style = "fab"
+      link = "https://t.me/semifunctional"
+    [params.contact.2]
+      name = "Steam"
+      icon = "steam"
+      style = "fab"
+      link = "https://steamcommunity.com/id/graynk"
+    [params.contact.3]
+      name = "HN"
+      icon = "hacker-news-square"
+      style = "fab"
+      link = "/hn"
